@@ -1,0 +1,56 @@
+
+.componente-principal{
+    display: flex;
+}
+
+.opciones{
+    background-color: black;
+    width: 20%;
+    height: 100vh;
+    border-right: solid;
+
+
+
+    .link{
+        text-decoration: none;
+    }
+
+    .opcion{
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+
+        border-bottom: solid;
+        color: black;
+        
+        
+
+    }
+
+    .subopciones{
+        display: none;
+    }
+    .subopcionesactive{
+        display: block;
+        width: 100%;
+        background-color: white;
+
+
+        .subopcion{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            border-bottom: solid;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+
+.contenido-de-opciones{
+    width: 80%;
+}

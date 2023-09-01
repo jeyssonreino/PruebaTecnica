@@ -1,0 +1,13 @@
+<div class="componente-principal">
+  <div class="opciones">
+    <a href="#" class="link"> <div class="opcion" (click)="cambiarClase()">Introducción</div></a>
+    <ul class="subopciones" [ngClass]="{'subopciones': claseSubmenu, 'subopcionesactive': !claseSubmenu}">
+        <li (click)="redireccionar1()" class="subopcion">Actividad 1</li>
+        <li (click)="redireccionar2()" class="subopcion">Actividad 2</li>
+    </ul>
+    <a href="#" class="link"> <div class="opcion">Explicación</div></a>
+  </div>
+  <div class="contenido-de-opciones">
+    <app-actividad1></app-actividad1>
+  </div>
+</div>

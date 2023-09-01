@@ -1,0 +1,104 @@
+<div class="componente-principal">
+    <div class="opciones">
+       <div class="opcion" (click)="cambiarClase()">Introducción</div>
+      <ul class="subopciones" [ngClass]="{'subopciones': claseSubmenu, 'subopcionesactive': !claseSubmenu}">
+          <li (click)="redireccionar1()" class="subopcion">Actividad 1</li>
+          <li (click)="redireccionar2()" class="subopcion">Actividad 2</li>
+      </ul>
+      <a href="#" class="link"> <div class="opcion">Explicación</div></a>
+    </div>
+    <div class="contenido-de-opciones">
+      <h1 class="titulo">Conjunto de seleccion multiple</h1>
+      <hr>
+      <h2 class="subtitulo">Resolver las sumas</h2>
+      <div class="formulario-componente">
+        <form action="formulario" >
+
+          <div class="pregunta">
+            <label for="">¿Cuanto es 2 +2?</label>
+          </div>
+
+          <div class="respuestas">
+            <label for=""><input type="radio" class="radio" name="suma1" value="1" [(ngModel)]="primerarespuesta"  id="">1 </label>
+            <label for=""><input type="radio" class="radio" name="suma1" value="2" [(ngModel)]="primerarespuesta"  id="">2</label>
+            <label for=""><input type="radio" class="radio" name="suma1" value="3" [(ngModel)]="primerarespuesta"  id="">3</label>
+            <label for=""><input type="radio" class="radio" name="suma1" value="4" [(ngModel)]="primerarespuesta"  id="">4</label>
+          </div>
+
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacioncorrecta1 == true">
+            <h1>respuesta correcta</h1>
+          </div>
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacionincorrecta1 == true">
+            <h1>respuesta incorrecta</h1>
+          </div>
+
+          <div class="pregunta">
+            <label for="">¿Cuanto es 4 + 6?</label>
+          </div>
+
+          <div class="respuestas">
+            <label for=""><input type="radio" class="radio" name="suma2" value="15" [(ngModel)]="segundarespuesta" id="">15</label>
+            <label for=""><input type="radio" class="radio" name="suma2" value="6" [(ngModel)]="segundarespuesta" id="">6</label>
+            <label for=""><input type="radio" class="radio" name="suma2" value="10" [(ngModel)]="segundarespuesta" id="">10</label>
+            <label for=""><input type="radio" class="radio" name="suma2" value="8" [(ngModel)]="segundarespuesta" id="">8</label>
+          </div>
+
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacioncorrecta2 == true">
+            <h1>respuesta correcta</h1>
+          </div>
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacionincorrecta2 == true">
+            <h1>respuesta incorrecta</h1>
+          </div>
+
+          <div class="pregunta">
+            <label for="">¿Cuanto es 3 + 2?</label>
+          </div>
+
+          <div class="respuestas">
+            <label for=""><input type="radio" class="radio" name="suma3" value="1" [(ngModel)]="tercerarespuesta" id="">1</label>
+            <label for=""><input type="radio" class="radio" name="suma3" value="7" [(ngModel)]="tercerarespuesta"  id="">7</label>
+            <label for=""><input type="radio" class="radio" name="suma3" value="9" [(ngModel)]="tercerarespuesta" id="">9</label>
+            <label for=""><input type="radio" class="radio" name="suma3" value="5" [(ngModel)]="tercerarespuesta" id="">5</label>
+          </div>
+
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacioncorrecta3 == true">
+            <h1>respuesta correcta</h1>
+          </div>
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacionincorrecta3 == true">
+            <h1>respuesta incorrecta</h1>
+          </div>
+
+          <div class="pregunta">
+            <label for="">¿Cuanto es 7 + 1?</label>
+          </div>
+
+          <div class="respuestas">
+            <label for=""><input type="radio" class="radio" name="suma4" value="9" [(ngModel)]="cuartarespuesta" id="">9</label>
+            <label for=""><input type="radio" class="radio" name="suma4" value="4" [(ngModel)]="cuartarespuesta" id="">4</label>
+            <label for=""><input type="radio" class="radio" name="suma4" value="8" [(ngModel)]="cuartarespuesta" id="">8</label>
+            <label for=""><input type="radio" class="radio" name="suma4" value="5" [(ngModel)]="cuartarespuesta" id="">5</label>
+          </div>
+
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacioncorrecta4 == true">
+            <h1>respuesta correcta</h1>
+          </div>
+          <div class="retroalimentacion-correcta" *ngIf="retroalimentacionincorrecta4 == true">
+            <h1>respuesta incorrecta</h1>
+          </div>
+
+
+
+          <div class="Revisar respuestas">
+            <button (click)="corregir()" [disabled] = "primerarespuesta == 0 || segundarespuesta== 0 || tercerarespuesta == 0 || cuartarespuesta == 0 ">Revisar respuestas</button>
+        </div> 
+
+
+
+        </form>
+
+        <form action=""></form>
+      </div>
+
+    </div>
+  </div>
+  

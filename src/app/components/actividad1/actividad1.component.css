@@ -1,0 +1,91 @@
+.componente-principal {
+}
+
+.titulo {
+  padding-left: 50px;
+  height: 50px;
+}
+
+.contenedor-de-mapa {
+
+}
+
+.nivel1 {
+  margin-top: 50px;
+  width: 90%;
+  border: solid;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: white;
+
+  .encabezado {
+    position: relative;
+    top: -20px;
+    right: 30px;
+    color: white;
+
+    padding: 1%;
+    background-color: orangered;
+  }
+}
+
+.linea1 {
+  width: 80%;
+  margin-left: 7%;
+  padding: 10px;
+  height: 60px;
+  border-left: solid;
+  border-bottom: solid;
+}
+
+.nivel2 {
+  margin-top: 30px;
+  width: 100%;
+  border: solid;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: white;
+  position: relative;
+  left: 30px;
+
+  .encabezado {
+    position: relative;
+    top: -20px;
+    right: 30px;
+    color: white;
+
+    padding: 1%;
+    background-color: orangered;
+  }
+}
+
+.linea2 {
+  width: 80%;
+  margin-left: 7%;
+  padding: 10px;
+  height: 100%;
+  border-left: solid;
+  border-bottom: solid;
+}
+
+.nivel3 {
+  margin-top: 30px;
+  width: 100%;
+  border: solid;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: white;
+  position: relative;
+  left: 30px;
+  top: 80px;
+
+  .encabezado {
+    position: relative;
+    top: -20px;
+    right: 30px;
+    color: white;
+
+    padding: 1%;
+    background-color: orangered;
+  }
+}
