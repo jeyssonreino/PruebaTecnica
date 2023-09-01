@@ -12,16 +12,16 @@ export class Actividad2Component {
 
   claseSubmenu = true;
 
-  primerarespuesta = 0;
+  primerarespuesta = null;
   retroalimentacioncorrecta1 = false;
   retroalimentacionincorrecta1 = false;
-  segundarespuesta = 0;
+  segundarespuesta = null;
   retroalimentacioncorrecta2 = false;
   retroalimentacionincorrecta2 = false;
-  tercerarespuesta = 0;
+  tercerarespuesta = null;
   retroalimentacioncorrecta3 = false;
   retroalimentacionincorrecta3 = false;
-  cuartarespuesta = 0;
+  cuartarespuesta = null;
   retroalimentacioncorrecta4 = false;
   retroalimentacionincorrecta4 = false;
 
